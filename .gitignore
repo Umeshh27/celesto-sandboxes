@@ -1,0 +1,19 @@
+# Environment variables (Live secrets must never be committed)
+.env
+*.env.local
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary frame files
+demo/temp_frames/
+
+# OS files
+.DS_Store
+Thumbs.db

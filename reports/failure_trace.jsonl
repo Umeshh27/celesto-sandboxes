@@ -1,0 +1,11 @@
+{"step": 1, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "provision_sandbox", "details": "Provisioned fresh sandbox sbx-step7fail01"}
+{"step": 2, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "boot_probe", "details": "Boot probe passed in 0.44s"}
+{"step": 3, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "ledger_registration", "details": "Recorded in run ledger as state=running"}
+{"step": 4, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "env_setup", "details": "Python package detonation harness prepared"}
+{"step": 5, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "static_analysis", "details": "Static AST parsing completed"}
+{"step": 6, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "snapshot_checkpoint", "details": "Captured snapshot snap-step6-pre-detonation"}
+{"step": 7, "sandbox_name": "sbx-step7fail01", "event": "step_failed", "step_name": "dynamic_detonation", "details": "Package execution aborted due to segfault in native shared object"}
+{"step": 7, "sandbox_name": "sbx-step7fail01", "event": "policy_applied", "policy": "rollback", "details": "Restored snapshot snap-step6-pre-detonation in 180ms"}
+{"step": 8, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "post_recovery_audit", "details": "Verified guest filesystem restored to clean baseline"}
+{"step": 9, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "synthesize_report", "details": "Compiled crash post-mortem report"}
+{"step": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "step_name": "cleanup", "details": "Sandbox sbx-step7fail01 cleanly destroyed"}

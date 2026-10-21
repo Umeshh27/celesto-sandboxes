@@ -1,0 +1,6 @@
+{
+  "who": "DevOps security engineers and developers evaluating third-party open-source npm and pip packages before installation.",
+  "agent_work": "The autonomous agent inspects, installs, and dynamically detonates untrusted packages inside an isolated Celesto microVM while monitoring system calls, processes, and network egress.",
+  "proof_output": "Structured detonation security report with risk score, blocked behaviors, and verified microVM containment evidence.",
+  "idea_source": "idea_bank"
+}

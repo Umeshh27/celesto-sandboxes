@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "Pre-execution command safety hooks inspect shell commands on the control plane before dispatching to the guest microVM, immediately halting malicious exfiltration attempts and privilege escalations.",
+      "evidence_path": "src/agent/hooks.py"
+    },
+    {
+      "id": "snapshots",
+      "why": "MicroVM hardware snapshots capture guest memory and disk state before executing untrusted packages, allowing instant rollback to a clean checkpoint when step 7 crashes or encounters malicious corruption.",
+      "evidence_path": "src/agent/sandbox.py"
+    },
+    {
+      "id": "network_policy",
+      "why": "Strict outbound network egress policies keep the microVM isolated from external command-and-control servers, ensuring prompt-injected packages and malware payloads cannot leak sensitive secrets or environment variables.",
+      "evidence_path": "src/agent/sandbox.py"
+    }
+  ]
+}

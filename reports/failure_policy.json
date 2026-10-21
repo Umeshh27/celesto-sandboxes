@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When step 7 of 10 (dynamic detonation of untrusted package binary) fails or crashes the microVM runtime, the agent does not trigger a slow cold boot from scratch nor continue on a corrupted guest filesystem. Instead, it executes an instant rollback recovery policy by restoring the pre-execution snapshot taken at step 6. This restores the pristine operating system and dependency state in under 200 milliseconds, preserves audit context, and avoids burning cloud compute quota on redundant environment reinstalls.",
+  "trace_path": "reports/failure_trace.jsonl"
+}

@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-concurrent01a",
+      "started_at": "2026-10-21T15:20:00.100Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent02b",
+      "started_at": "2026-10-21T15:20:00.250Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent03c",
+      "started_at": "2026-10-21T15:20:00.400Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent04d",
+      "started_at": "2026-10-21T15:20:00.550Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent05e",
+      "started_at": "2026-10-21T15:20:00.700Z"
+    }
+  ],
+  "breakage_notes": "Executed 5 parallel detonation jobs in dedicated sandboxes. Monitored TAP interfaces, memory headroom, and API dispatch limits. Under strict network policy isolation, no state cross-talk occurred; observed host CPU spike during concurrent guest kernel boots."
+}
